@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+input {
+  outline: none;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+}
+.form__container {
+  padding-top: 30px;
+}
+.name {
+  display: flex;
+}
+.name__label {
+  display: block;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.name__label span {
+  color: red;
+}
+.name__input {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid rgba(163, 160, 160, 0.5);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.name__label-second, .name__label-third {
+  display: block;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+
+.address {
+  margin-top: 40px;
+}
+
+.address__label {
+  display: block;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.address__label span {
+  color: red;
+}
+.address__input {
+  width: 634px;
+  height: 40px;
+  border: 1px solid rgba(163, 160, 160, 0.5);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.address__label-second, .address__label-third {
+  margin-bottom: 20px;
+}
+.address__label-second, .address__label-third, .address__label-fourth {
+  display: block;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+.address__city {
+  display: flex;
+}
+.city__label {
+  display: block;
+  margin-bottom: 20px;
+}
+.city__input {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid rgba(163, 160, 160, 0.5);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.city__label {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+
+.phone {
+  margin-top: 40px;
+}
+
+.phone__label {
+  display: block;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.phone__label span {
+  color: red;
+}
+.phone__input {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid rgba(163, 160, 160, 0.5);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.email {
+  margin-top: 40px;
+}
+
+.email__label {
+  display: block;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.email__input {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid rgba(163, 160, 160, 0.5);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.email__example {
+  display: block;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.form__submit {
+  width: 170px;
+  height: 50px;
+  background: none;
+  font-size: 16px;
+  border: 1px solid rgb(29, 217, 26);
+  border-radius: 5px;
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.text-danger {
+  display: block;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+.form-control.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+.form-control.ng-touched.ng-valid {
+  border: 1px solid green;
+}
+
+.disable {
+  color: gray;
+  cursor: default;
+}
+.enable {
+  color: #000;
+}
+button.enable:hover,
+button.enable:focus{
+  color: #fff;
+  background: #1ac71a;
+  box-shadow: 0 0.5em 0.5em -0.4em #1ac71a;
+  transform: translateY(-0.25em);
+}
+
