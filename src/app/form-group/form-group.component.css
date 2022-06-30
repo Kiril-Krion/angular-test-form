@@ -10,6 +10,10 @@ input {
   display: grid;
   place-content: center;
 }
+.logo {
+  margin: 0 auto;
+  width: 100px;
+}
 .form__container {
   padding-top: 30px;
 }
