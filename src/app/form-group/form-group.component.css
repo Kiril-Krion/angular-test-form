@@ -188,3 +188,21 @@ button.enable:focus{
   transform: translateY(-0.25em);
 }
 
+@media(max-width: 669px) {
+  .form__container {
+    max-width: 580px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name__label-second {
+    margin-bottom: 20px;
+  }
+  .address__input {
+    width: 300px;
+  }
+  .address__city {
+    flex-direction: column;
+  }
+}
+
