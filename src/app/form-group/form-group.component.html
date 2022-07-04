@@ -6,13 +6,13 @@
       <div class="name">
         <div>
           <input formControlName="name" type="text" class="name__input form-control"/>
-          <small *ngIf="name!.invalid && exform.get('name')!.touched" class="text-danger">First Name is
+          <small *ngIf="name!.invalid && name!.touched" class="text-danger">First Name is
             required</small>
           <label class="name__label-second">First Name</label>
         </div>
         <div>
           <input formControlName="lastName" type="text" class="name__input form-control"/>
-          <small *ngIf="lastName!.invalid && exform.get('lastName')!.touched" class="text-danger">Last
+          <small *ngIf="lastName!.invalid && lastName!.touched" class="text-danger">Last
             Name is required</small>
           <label class="name__label-third">Last Name</label>
         </div>
@@ -22,18 +22,18 @@
     <div class="address">
       <label class="address__label">Address <span>*</span></label>
       <input formControlName="address" type="text" class="address__input form-control"/>
-      <small *ngIf="address!.invalid && exform.get('address')!.touched" class="text-danger">Street Address
+      <small *ngIf="address!.invalid && address!.touched" class="text-danger">Street Address
         is required</small>
       <label class="address__label-second">Street Address</label>
       <input formControlName="secondAddress" type="text" class="address__input form-control"/>
-      <small *ngIf="secondAddress!.invalid && exform.get('secondAddress')!.touched" class="text-danger">Street
+      <small *ngIf="secondAddress!.invalid && secondAddress!.touched" class="text-danger">Street
         Address Line 2 is required</small>
       <label class="address__label-third">Street Address Line 2</label>
 
       <div class="address__city">
         <div>
           <input formControlName="city" type="text" class="city__input form-control"/>
-          <small *ngIf="city!.invalid && exform.get('city')!.touched" class="text-danger">City is
+          <small *ngIf="city!.invalid && city!.touched" class="text-danger">City is
             required</small>
           <label class="city__label">City</label>
         </div>
@@ -44,7 +44,7 @@
       </div>
 
       <input formControlName="zip" type="text" class="address__input form-control"/>
-      <small *ngIf="zip!.invalid && exform.get('zip')!.touched" class="text-danger">Postal / Zip Code is
+      <small *ngIf="zip!.invalid && zip!.touched" class="text-danger">Postal / Zip Code is
         required</small>
       <label class="address__label-fourth">Postal / Zip Code</label>
     </div>
@@ -56,14 +56,14 @@
         class="phone__input form-control"
         type="tel"
         placeholder="(000) 000-0000">
-      <small *ngIf="phone!.invalid && exform.get('phone')!.touched" class="text-danger">Phone is
+      <small *ngIf="phone!.invalid && phone!.touched" class="text-danger">Phone is
         required(maximum length 10)</small>
     </div>
 
     <div class="email">
       <label class="email__label">E-Mail</label>
       <input formControlName="email" class="email__input form-control" type="email" placeholder="ex: email@yahoo.com">
-      <small *ngIf="email!.invalid && exform.get('email')!.touched" class="text-danger">E-Mail is
+      <small *ngIf="email!.invalid && email!.touched" class="text-danger">E-Mail is
         required</small>
       <label class="email__example">example@example.com</label>
     </div>
